@@ -1,0 +1,258 @@
+﻿<Window x:Class="skocko_game.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:skocko_game"
+        mc:Ignorable="d"
+        Title="Skocko" Height="600" Width="900" ResizeMode="CanMinimize">
+    <Grid Background="PowderBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,25,0,25">
+            <StackPanel x:Name="r0" Orientation="Horizontal">
+                <Grid x:Name="r0g0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="r0g1" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="r0g2" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="r0g3" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+            </StackPanel>
+
+            <StackPanel x:Name="r1" Orientation="Horizontal" Margin="0,10,0,0">
+                <Grid x:Name="r1g0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="r1g1" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="r1g2" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="r1g3" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+            </StackPanel>
+
+            <StackPanel x:Name="r2" Orientation="Horizontal" Margin="0,10,0,0">
+                <Grid x:Name="r2g0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="r2g1" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="r2g2" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="r2g3" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+            </StackPanel>
+
+            <StackPanel x:Name="r3" Orientation="Horizontal" Margin="0,10,0,0">
+                <Grid x:Name="r3g0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="r3g1" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="r3g2" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="r3g3" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+            </StackPanel>
+
+
+            <StackPanel x:Name="r4" Orientation="Horizontal" Margin="0,10,0,0">
+                <Grid x:Name="r4g0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="r4g1" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="r4g2" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="r4g3" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+            </StackPanel>
+
+
+            <StackPanel x:Name="r5" Orientation="Horizontal" Margin="0,10,0,0">
+                <Grid x:Name="r5g0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="r5g1" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="r5g2" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="r5g3" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Column="0" Grid.Row="1" x:Name="answer" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid x:Name="a0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="a1" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="a2" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="a3" Margin="10,0,0,0">
+                    <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+            </StackPanel>
+        
+
+        <StackPanel Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center">
+            <Rectangle Width="20" Height="50" Fill="Yellow"></Rectangle>
+            <Rectangle Width="20" Height="450" Fill="Black"></Rectangle>
+        </StackPanel>
+
+
+        <StackPanel Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel x:Name="t0" Orientation="Horizontal">
+                <Grid x:Name="t0g0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="t0g1" Margin="10,0,0,0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="t0g2" Margin="10,0,0,0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="t0g3" Margin="10,0,0,0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+            </StackPanel>
+
+            <StackPanel x:Name="t1" Orientation="Horizontal" Margin="0,10,0,0">
+                <Grid x:Name="t1g0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="t1g1" Margin="10,0,0,0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="t1g2" Margin="10,0,0,0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="t1g3" Margin="10,0,0,0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+            </StackPanel>
+
+            <StackPanel x:Name="t2" Orientation="Horizontal" Margin="0,10,0,0">
+                <Grid x:Name="t2g0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="t2g1" Margin="10,0,0,0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="t2g2" Margin="10,0,0,0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="t2g3" Margin="10,0,0,0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+            </StackPanel>
+
+            <StackPanel x:Name="t3" Orientation="Horizontal" Margin="0,10,0,0">
+                <Grid x:Name="t3g0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="t3g1" Margin="10,0,0,0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="t3g2" Margin="10,0,0,0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="t3g3" Margin="10,0,0,0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+            </StackPanel>
+
+
+            <StackPanel x:Name="t4" Orientation="Horizontal" Margin="0,10,0,0">
+                <Grid x:Name="t4g0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="t4g1" Margin="10,0,0,0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="t4g2" Margin="10,0,0,0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="t4g3" Margin="10,0,0,0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+            </StackPanel>
+
+
+            <StackPanel x:Name="t5" Orientation="Horizontal" Margin="0,10,0,0">
+                <Grid x:Name="t5g0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="t5g1" Margin="10,0,0,0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="t5g2" Margin="10,0,0,0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+                <Grid x:Name="t5g3" Margin="10,0,0,0">
+                    <Ellipse Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                </Grid>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            <Grid x:Name="c0">
+                <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                <Image Source="images/circle.png" Width="50" />
+            </Grid>
+            <Grid x:Name="c1" Margin="5,0,0,0">
+                <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                <Image Source="images/club.png" Width="50" />
+            </Grid>
+            <Grid x:Name="c2" Margin="5,0,0,0">
+                <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                <Image Source="images/spade.png" Width="50" />
+            </Grid>
+            <Grid x:Name="c3" Margin="5,0,0,0">
+                <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                <Image Source="images/heart.png" Width="50" />
+            </Grid>
+            <Grid x:Name="c4" Margin="5,0,0,0">
+                <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                <Image Source="images/diamond.png" Width="50" />
+            </Grid>
+            <Grid x:Name="c5" Margin="5,0,0,0">
+                <Rectangle Stroke="Black" StrokeThickness="2" Width="60" Height="60"/>
+                <Image Source="images/star.png" Width="50" />
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
